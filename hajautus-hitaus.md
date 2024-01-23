@@ -14,15 +14,13 @@ Jotta pystymme valitsemaan törmäyksiä aiheuttavat avaimet, meidän tulee tunt
 
 Pythonin hajautusfunktio `hash` on toteutettu eri tavalla eri tietotyypeille. Tiettyä rajaa pienemmillä kokonaisluvuilla hajautusfunktio on toteutettu yksinkertaisesti niin, että kokonaisluvun hajautusarvo on sama kuin luku itse:
 
-```python
->>> hash(1)
-1
->>> hash(2)
-2
->>> hash(3)
-3
->>> hash(123456789)
-123456789
+```console?lang=python
+> hash(42)
+42
+> hash(123)
+123
+> hash(1337)
+1337
 ```
 
 Käytämme tässä sanakirjan avaimina kokonaislukuja, jolloin niiden hajautusarvot saadaan yllä olevalla tavalla.
@@ -168,19 +166,19 @@ Vaikka on mahdollista muodostaa syöte, jossa sanakirja toimii hitaasti, tällai
 
 Hajautuksen hitaus on kuitenkin uhka esimerkiksi web-ohjelmoinnissa, koska hyökkääjä voi koettaa lähettää sivustolle dataa, joka aiheuttaa törmäyksiä hajautuksessa. Pythonissa [tähän on varauduttu](https://github.com/python/cpython/issues/57912) niin, että funktion `hash` toiminta merkkijonoilla muuttuu aina, kun Python käynnistetään uudestaan:
 
-```python
+```console?lang=python
 $ python3
->>> hash("apina")
+> hash("apina")
 -8847049641918498300
->>> exit()
+> exit()
 $ python3
->>> hash("apina")
+> hash("apina")
 5108947336973792736
->>> exit()
+> exit()
 $ python3
->>> hash("apina")
+> hash("apina")
 -7637574785741815573
->>> exit()
+> exit()
 ```
 
 Tämän vuoksi ei ole mahdollista muodostaa tässä esitetyllä tavalla listaa merkkijonoista, joka aiheuttaisi sanakirjan hidastumisen.
