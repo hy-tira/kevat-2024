@@ -23,7 +23,7 @@ Pythonin hajautusfunktio `hash` on toteutettu eri tavalla eri tietotyypeille. Ti
 1337
 ```
 
-Käytämme tässä sanakirjan avaimina kokonaislukuja, jolloin niiden hajautusarvot saadaan yllä olevalla tavalla.
+Käytämme tässä sanakirjan avaimina pieniä kokonaislukuja, jolloin niiden hajautusarvot saadaan yllä olevalla tavalla.
 
 ## Hajautustaulun koko
 
