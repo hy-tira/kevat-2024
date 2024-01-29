@@ -49,6 +49,6 @@ Lisäysjärjestäminen vie aikaa $$O(n^2)$$, koska se muodostuu kahdesta sisäkk
 
 Lisäysjärjestämisen tehokkuutta kuvaa tarkemmin listan _inversioiden_ määrä. Lukupari $$(a,b)$$ on inversio, jos $$a<b$$ ja listan alkiot kohdissa $$a$$ ja $$b$$ ovat väärässä järjestyksessä. Esimerkiksi listassa $$[5,2,4,2,6,1]$$ inversiot ovat $$(0,1)$$, $$(0,2)$$, $$(0,3)$$, $$(0,5)$$, $$(2,3)$$, $$(2,5)$$ ja $$(4,5)$$.
 
-Jokainen lisäysjärjestämisen tekemä kahden alkion vaihto (koodissa funktion `swap` kutsuminen) poistaa listasta yhden inversion. Niinpä lisäysjärjestämisen vaihtojen määrä on yhtä suuri kuin listan inversioiden määrä. Kun lista on käänteisessä järjestyksessä, inversioiden määrä on $$n(n-1)/2$$.
+Jokainen lisäysjärjestämisen tekemä kahden alkion vaihto (koodissa funktion `swap` kutsuminen) poistaa listasta yhden inversion. Niinpä lisäysjärjestämisen vaihtojen määrä on yhtä suuri kuin listan inversioiden määrä. Kun lista on käänteisessä järjestyksessä, inversioiden määrä on $$n(n-1)/2$$ eli luokkaa $$n^2$$.
 
 Jos järjestämisalgoritmi vaihtaa aina kahden vierekkäin olevan alkion järjestyksen, algoritmin aikavaativuus ei voi olla parempi kuin $$O(n^2)$$. Syynä tähän on, että inversioiden määrä voi olla luokkaa $$n^2$$ ja jokainen vaihto poistaa vain yhden inversion. Tehokkaat järjestämisalgoritmit pystyvät siirtämään alkioita tehokkaammin kuin vaihtamalla keskenään vierekkäisiä alkioita.

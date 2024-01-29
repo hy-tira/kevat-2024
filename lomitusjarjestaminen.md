@@ -8,7 +8,7 @@ hide: true
 
 _Lomistusjärjestäminen_ (_merge sort_) on tehokas järjestämisalgoritmi, jonka aikavaativuus on $$O(n \log n)$$.
 
-Algoritmi järjestää listan rekursiivisesti niin, että se järjestää ensin erikseen listan vasemman ja oikean puoliskon. Tämän jälkeen se yhdistää järjestetyn vasemman ja oikean puoliskon kokonaiseksi järjestetyksi listaksi. Koska vasen ja oikea puolisko on valmiiksi järjestyksessä, niiden yhdistäminen voidaan toteuttaa tehokkaasti.
+Algoritmi järjestää listan rekursiivisesti niin, että se järjestää ensin erikseen listan vasemman ja oikean puoliskon. Tämän jälkeen se yhdistää järjestetyn vasemman ja oikean puoliskon kokonaiseksi järjestetyksi listaksi. Koska vasen ja oikea puolisko ovat valmiiksi järjestyksessä, niiden yhdistäminen voidaan toteuttaa tehokkaasti.
 
 Algoritmi hyödyntää rekursiota niin, että se järjestää listan vasemman ja oikean puoliskon kutsumalla itseään. Rekursio päättyy, kun listalla on vain yksi alkio, jolloin listaa ei tarvitse järjestää vaan se on valmiiksi järjestyksessä.
 
