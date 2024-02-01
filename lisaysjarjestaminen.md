@@ -47,7 +47,7 @@ Huomaa, että funktion `insertion_sort` tarkoituksena on havainnollistaa, miten 
 
 Lisäysjärjestäminen vie aikaa $$O(n^2)$$, koska se muodostuu kahdesta sisäkkäisestä silmukasta. Pahin tapaus algoritmille on käänteisessä järjestyksessä oleva lista, jossa jokainen alkio täytyy siirtää listan alkuun askel kerrallaan.
 
-Lisäysjärjestämisen tehokkuutta kuvaa tarkemmin listan _inversioiden_ määrä. Lukupari $$(a,b)$$ on inversio, jos $$a<b$$ ja listan alkiot kohdissa $$a$$ ja $$b$$ ovat väärässä järjestyksessä. Esimerkiksi listassa $$[5,2,4,2,6,1]$$ inversiot ovat $$(0,1)$$, $$(0,2)$$, $$(0,3)$$, $$(0,5)$$, $$(2,3)$$, $$(2,5)$$ ja $$(4,5)$$.
+Lisäysjärjestämisen tehokkuutta kuvaa tarkemmin listan _inversioiden_ määrä. Lukupari $$(a,b)$$ on inversio, jos $$a<b$$ ja listan alkiot kohdissa $$a$$ ja $$b$$ ovat väärässä järjestyksessä. Esimerkiksi listassa $$[5,2,4,2,6,1]$$ inversiot ovat $$(0,1)$$, $$(0,2)$$, $$(0,3)$$, $$(0,5)$$, $$(1,5)$$, $$(2,3)$$, $$(2,5)$$, $$(3,5)$$ ja $$(4,5)$$.
 
 Jokainen lisäysjärjestämisen tekemä kahden alkion vaihto (koodissa funktion `swap` kutsuminen) poistaa listasta yhden inversion. Niinpä lisäysjärjestämisen vaihtojen määrä on yhtä suuri kuin listan inversioiden määrä. Kun lista on käänteisessä järjestyksessä, inversioiden määrä on $$n(n-1)/2$$ eli luokkaa $$n^2$$.
 
