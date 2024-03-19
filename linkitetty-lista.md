@@ -15,7 +15,7 @@ Tarkastellaan esimerkkinä listan $$[1,2,3]$$ tallentamista tavallisena listana 
 
 Tässä listan alkiot on tallennettu muistiin alkaen kohdasta 100. Alkiot ovat peräkkäin muistissa ja lisäykset ja poistot ovat tehokkaita vain listan lopussa.
 
-Linkitettynä listanne tilanne voi puolestaan näyttää seuraavalta:
+Linkitettynä listana tilanne voi puolestaan näyttää seuraavalta:
 
 100 | 101 | 102 | 103 | 104 | 105 | 106 | 107 | 108 | 109 | 110 | 111
 1 | 0 | 106 | 3 | 106 | 0 | 2 | 100 | 103 | 0 | 0 | 0
