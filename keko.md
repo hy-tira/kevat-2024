@@ -28,7 +28,7 @@ Uusi alkio lisätään uudeksi solmuksi keon pohjalle listan loppuun. Tämän j�
 
 Seuraava kuva näyttää, miten alkio $$2$$ voidaan lisätä kekoon. Alkio lisätään aluksi keon pohjalle, minkä jälkeen se nostetaan kaksi tasoa ylöspäin.
 
-![](../keko_1.png)
+![](keko_1.png)
 
 Alkion lisääminen vie aikaa $$O(\log n)$$, koska alkio nousee jonkin määrän tasoja ylöspäin keossa ja keon tasojen määrä on $$O(\log n)$$.
 
@@ -38,7 +38,7 @@ Keon juuressa oleva alkio voidaan poistaa siirtämällä sen tilalle keon viimei
 
 Seuraava kuva näyttää, miten pienin alkio $$1$$ voidaan poistaa keosta. Sen tilalle siirretään keon pohjalta alkio $$5$$, joka lasketaan sitten alaspäin.
 
-![](../keko_2.png)
+![](keko_2.png)
 
 Alkion lisääminen vie aikaa $$O(\log n)$$, koska alkio laskeutuu jonkin määrän tasoja alaspäin keossa ja keon tasojen määrä on $$O(\log n)$$.
 
